@@ -1,0 +1,465 @@
+.resume-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+/* HEADER */
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.resume-title {
+  font-size: 4.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.resume-title span {
+  color: #38bdf8;
+}
+
+.section-subtitle {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+/* BLOCK */
+
+.resume-block {
+  margin-bottom: 55px;
+}
+
+.resume-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.heading-icon {
+  font-size: 1.2rem;
+  filter: grayscale(1);
+}
+
+/* CARD */
+
+.resume-card {
+  position: relative;
+
+  background: #1c1f27;
+
+  border-left: 3px solid #38bdf8;
+
+  border-radius: 0 12px 12px 0;
+
+  padding: 26px;
+
+  margin-bottom: 18px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateX(6px);
+
+  box-shadow:
+    0 0 25px rgba(56, 189, 248, 0.08);
+
+  border-left-color: #22d3ee;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.resume-card h4 {
+  color: #f8fafc;
+  font-size: 1.15rem;
+  margin-bottom: 7px;
+}
+
+.resume-card p {
+  color: #94a3b8;
+  margin: 5px 0;
+}
+
+.resume-date {
+  color: #38bdf8;
+  font-size: 0.9rem;
+}
+
+.card-description {
+  margin-top: 15px !important;
+  line-height: 1.7;
+}
+
+.status-badge,
+.score-badge {
+  white-space: nowrap;
+
+  border: 1px solid #38bdf8;
+
+  color: #38bdf8;
+
+  padding: 5px 10px;
+
+  border-radius: 5px;
+
+  font-size: 0.75rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.score-badge {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* TAGS */
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+.card-tags span {
+  background: #111318;
+
+  border: 1px solid #303640;
+
+  color: #7dd3fc;
+
+  padding: 6px 10px;
+
+  border-radius: 5px;
+
+  font-size: 0.75rem;
+}
+
+/* LIST */
+
+.resume-list {
+  margin-top: 18px;
+
+  padding-left: 20px;
+
+  color: #94a3b8;
+
+  line-height: 1.9;
+}
+
+.resume-list li::marker {
+  color: #38bdf8;
+}
+
+/* SKILLS */
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.skill-card {
+  position: relative;
+
+  background: #1c1f27;
+
+  border: 1px solid #292e38;
+
+  border-radius: 10px;
+
+  padding: 23px;
+
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: #38bdf8;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 30px rgba(56, 189, 248, 0.08);
+}
+
+.skill-number {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  color: #334155;
+
+  font-size: 0.8rem;
+
+  font-family: monospace;
+}
+
+.skill-card h4 {
+  color: #38bdf8;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #94a3b8;
+
+  line-height: 1.6;
+
+  font-size: 0.9rem;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+}
+
+.achievement-card {
+  background: #1c1f27;
+
+  border: 1px solid #292e38;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.achievement-number {
+  color: #38bdf8;
+
+  font-size: 1.5rem;
+
+  font-weight: 800;
+
+  min-width: 55px;
+}
+
+.achievement-card h4 {
+  color: #f8fafc;
+
+  font-size: 0.95rem;
+
+  margin-bottom: 4px;
+}
+
+.achievement-card p {
+  color: #64748b;
+
+  font-size: 0.75rem;
+}
+
+/* LANGUAGES */
+
+.language-list {
+  background: #1c1f27;
+
+  border-radius: 10px;
+
+  border: 1px solid #292e38;
+
+  overflow: hidden;
+}
+
+.language-list div {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px 20px;
+
+  border-bottom: 1px solid #292e38;
+}
+
+.language-list div:last-child {
+  border-bottom: none;
+}
+
+.language-list span {
+  color: #cbd5e1;
+}
+
+.language-list b {
+  color: #38bdf8;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+}
+
+/* GOAL */
+
+.goal-card {
+  position: relative;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1c1f27,
+      #15181e
+    );
+
+  border: 1px solid #26313b;
+
+  border-left: 3px solid #38bdf8;
+
+  border-radius: 0 12px 12px 0;
+
+  padding: 28px;
+}
+
+.goal-card h4 {
+  color: #38bdf8;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 12px;
+}
+
+.goal-card p {
+  color: #94a3b8;
+
+  line-height: 1.8;
+
+  margin-bottom: 25px;
+}
+
+.goal-line {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  color: #38bdf8;
+
+  font-family: monospace;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 0.1em;
+}
+
+.goal-line i {
+  color: #475569;
+
+  font-style: normal;
+}
+
+/* DOWNLOAD */
+
+.resume-download {
+  margin-top: 45px;
+}
+
+.resume-download a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  background: #38bdf8;
+
+  color: #06111a;
+
+  padding: 13px 22px;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+.resume-download a:hover {
+  background: #67e8f9;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+.resume-download span {
+  font-size: 1.2rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .resume-section {
+    padding: 20px;
+  }
+
+  .resume-title {
+    font-size: 3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-top {
+    flex-direction: column;
+  }
+
+  .status-badge,
+  .score-badge {
+    align-self: flex-start;
+  }
+
+  .goal-line {
+    flex-wrap: wrap;
+  }
+}
