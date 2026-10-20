@@ -14,6 +14,10 @@ const Resume = () => {
         <p className="section-subtitle">
           A summary of my education, experience, skills, and ambitions.
         </p>
+
+        <a href="/ansh_resume.pdf" download className="resume-download-btn">
+          ⬇ Download Resume
+        </a>
       </div>
 
       {/* Education */}
@@ -280,7 +284,7 @@ const Resume = () => {
       </div>
 
 
-      {/* Download */}
+      {/* Download (bottom) */}
       <div className="resume-download">
         <a href="/ansh_resume.pdf" download>
           Download Full Resume <span>↓</span>
